@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     private val customContract = registerForActivityResult(SecondActivity.ContractClass()) { output ->
 
         output.let {
-            Log.e("Got result = ", it.outputString)
+            Log.d(TAG, it.outputString)
         }
     }
 

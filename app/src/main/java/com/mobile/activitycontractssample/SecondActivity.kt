@@ -17,8 +17,6 @@ class SecondActivity : AppCompatActivity(){
         setContentView(binding.root)
         val name =   intent?.getStringExtra("name")
         val id =   intent?.getStringExtra("id")
-
-        Log.e("Name = ", "$name and id  =  $id")
         binding.btnSecond.setOnClickListener {
             setResult(RESULT_OK, Intent().putExtra("output", "got data and worked"))
             finish()
